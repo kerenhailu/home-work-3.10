@@ -40,10 +40,10 @@
 // const NUMBERS2 = [5, 14, 36, 75, 99, 88];
 // const NUMBERS_EVEN2 = [];
 // for (num of NUMBERS2) {
- 
+
 //   if (num % 2 == 0) {
 //       num="even";
-    
+
 //   } NUMBERS_EVEN2.push(num);
 // }
 // console.log(NUMBERS_EVEN2);
@@ -53,30 +53,38 @@
 //     document.write(`${itemObjKey} : ${OBJECT[itemObjKey]} `)
 // }
 // -----------------------------8-----------------------------
-// const OBJ={name:"dan", famName:"cohen" , age:30}
-// const NEW_OBJ=[{}]
+// function hi(OBJ){
+// const NEW_OBJ={}
 // for(itemKey in OBJ){
-//     NEW_OBJ.push(`${itemKey} : ${OBJ[itemKey]}hi`)
+//     NEW_OBJ[itemKey]=(`hi ${OBJ[itemKey]}`)
 // }
-// console.log(NEW_OBJ);
-// -----------------------------9-----------------------------?
-// let PUPILS_ARRAY=[{name:"gil", class:"a" , age:30},
-//     {name:"avi", class:"c" , age:15},
-//     {name:"haim", class:"e" , age:20},
-//     {name:"dana", class:"b" , age:16},
-//     {name:"tal", class:"d" , age:28},]
- 
-//     let PUPILS_ARRAY_NEW=[{}]
-//     PUPILS_ARRAY.forEach((objPupils)=>{
-//         PUPILS_ARRAY_NEW.push(objPupils)
-//       for(let KeyObj in objPupils){
-//           if(objPupils[KeyObj]=="name"){objPupils[KeyObj]=`sir+${objPupils[KeyObj]}`}
-//       }
-//     })
-// console.log(PUPILS_ARRAY_NEW); 
+// return NEW_OBJ
+  
+// }
+// console.log(hi({name:"dan", famName:"cohen" , age:30})); 
+
+// -----------------------------9-----------------------------
+// function PlusSIR(){
+//   let PUPILS_ARRAY = [
+//   { name: "gil", class: "a", age: 30 },
+//   { name: "avi", class: "c", age: 15 },
+//   { name: "haim", class: "e", age: 20 },
+//   { name: "dana", class: "b", age: 16 },
+//   { name: "tal", class: "d", age: 28 },
+// ];
+
+// let PUPILS_ARRAY_NEW = [{}];
+// PUPILS_ARRAY.forEach((objPupils) => {
+//   objPupils.name += " sir";
+//   PUPILS_ARRAY_NEW.push(objPupils);
+// });
+// console.log(PUPILS_ARRAY_NEW);  
+// }
+// PlusSIR()
 
 // -----------------------------10-----------------------------
 // -----------------הכניס לי רק את הגילאים-------------------
+
 // const PUPILS=[{name:"gil", class:"a" , age:30},
 //     {name:"avi", class:"c" , age:15},
 //     {name:"haim", class:"e" , age:20},
@@ -85,11 +93,9 @@
 //     const PUPILS_UP=[]
 //     PUPILS.forEach((objP)=>{
 //         for(let itemKey in objP){
-//             if(objP[itemKey]>18){
+//             if(objP.age>18){
 //                 PUPILS_UP.push(`${itemKey} :${objP[itemKey]}`)
 //             }
 //         }
 //     })
 //     console.log(PUPILS_UP);
-
-
